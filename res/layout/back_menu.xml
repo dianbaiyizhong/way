@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg" 
+    android:orientation="vertical" 
+    
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+    
+    
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="请输入被控手机号码"
+        android:textSize="20dp" />
+
+   <EditText
+       android:id="@+id/telnum"
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:background="@drawable/edit_bg"
+       android:ems="10"
+       android:hint="被控手机号码" >
+      <requestFocus />
+   </EditText>
+
+   <LinearLayout
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:background="@drawable/btn_master_n" 
+       android:gravity="center">
+
+       <ImageView
+           android:id="@+id/imageView3"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_weight="0.1"
+           android:layout_gravity="center_vertical"
+           android:src="@drawable/incoming" />
+
+       <TextView
+           android:id="@+id/textView3"
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.04"
+           android:gravity="center"
+           android:textColor="@color/white"
+           android:text="开启通话、短信信息监控" 
+           android:textSize="16dp"/>
+
+   </LinearLayout>
+   
+<LinearLayout
+      android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:background="@drawable/btn_master_n" >
+
+       <ImageView
+           android:id="@+id/imageView3"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_weight="0.1"
+           android:layout_gravity="center_vertical"
+           android:src="@drawable/location" />
+
+       <TextView
+           android:id="@+id/textView3"
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.04"
+           android:gravity="center"
+           android:text="定位监控"
+           android:textColor="@color/white"
+           android:textSize="16dp" />
+
+   </LinearLayout>
+
+   
+<LinearLayout
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:background="@drawable/btn_master_n" >
+
+       <ImageView
+           android:id="@+id/imageView3"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_weight="0.1"
+           android:layout_gravity="center_vertical"
+           android:src="@drawable/callback" />
+
+       <TextView
+           android:id="@+id/textView3"
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.04"
+           android:gravity="center"
+           android:textColor="@color/white"
+           android:text="回拨电话" 
+           android:textSize="16dp"/>
+
+   </LinearLayout>
+<LinearLayout
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:background="@drawable/btn_master_n" >
+
+       <ImageView
+           android:id="@+id/imageView3"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_weight="0.1"
+           android:layout_gravity="center_vertical"
+           android:src="@drawable/ring" />
+
+       <TextView
+           android:id="@+id/textView3"
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.04"
+           android:gravity="center"
+           android:textColor="@color/white"
+           android:text="播放铃音" 
+           android:textSize="16dp"/>
+
+   </LinearLayout>
+   
+<LinearLayout
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:background="@drawable/btn_master_n" >
+
+       <ImageView
+           android:id="@+id/imageView3"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_weight="0.1"
+           android:layout_gravity="center_vertical"
+           android:src="@drawable/vibrate" />
+
+       <TextView
+           android:id="@+id/textView3"
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.04"
+           android:gravity="center"
+           android:textColor="@color/white"
+           android:text="手机震动" 
+           android:textSize="16dp"/>
+
+   </LinearLayout>
+   </LinearLayout>
+</LinearLayout>
+
+

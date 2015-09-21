@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dip" >
+
+    <ImageView
+        android:id="@+id/ItemImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/ItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ItemImage"
+        android:text="TextView01"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/ItemText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ItemTitle"
+        android:layout_toRightOf="@+id/ItemImage"
+        android:text="TextView02" />
+
+    <!-- <Switch -->
+    <!-- android:id="@+id/switch_function" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:focusable="false" /> -->
+
+    <org.hhm.way.view.Switch
+        android:id="@+id/switch_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+         />
+    <!-- 这个属性设置为true之后，那么在listview中，选项整行都交给了switch，此时只需对switch进行监听就好   android:focusable="true" -->
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_set_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <!-- 第一个线性布局，用来显示文字和listview -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:text="注意:主控端与被控端指令必须一致!"
+            android:textColor="@color/white"
+            android:textSize="21dp" />
+
+        <ListView
+            
+            android:id="@+id/LV_Left_Set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/controled_actionlist"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+             >
+        </ListView>
+    </LinearLayout>
+
+    <!-- 第二个线性布局，用来显示两个checkbox -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.2"
+        android:orientation="vertical" >
+
+        <!-- 第2.1个线性布局，水平方向 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/shape_white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="启动服务后,是否跳转回桌面"
+                android:textSize="25dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="" />
+        </LinearLayout>
+
+        <!-- 第2.2个线性布局，水平方向 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_white"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="是否长时间显示通知"
+                android:textSize="25dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_id"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bei" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4.0"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/wz_PhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="请输入主控手机号码"
+            android:textColor="@color/white"
+            android:textSize="27dp" >
+        </TextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/ET_PhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_bg"
+            android:hint="主控手机号码"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:textSize="23dp" >
+        </AutoCompleteTextView>
+
+        <ListView
+            android:id="@+id/LV_FunctionMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/controled_actionlist"
+            android:divider="#00000000"
+            android:focusable="false"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:paddingTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/StartMonitor"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_press_startserver"
+                android:scaleType="fitXY"
+                android:text="开始监控"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/StopMonitor"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_press_stopserver"
+                android:scaleType="fitXY"
+                android:text="停止监控"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

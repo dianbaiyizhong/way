@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical"
+    android:paddingTop="64dp" 
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"        
+        android:hint=" 电子邮箱Email"
+        android:background="@drawable/edit_bg" >
+       
+    </EditText>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView1"
+        android:layout_below="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        android:gravity="start"       
+        android:hint="  您的建议信息"
+        android:layout_gravity="fill_vertical"
+        android:background="@drawable/controled_actionlist"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/multiAutoCompleteTextView1"
+       
+        android:textColor="@color/white"
+        android:text="提交" />
+
+</LinearLayout>

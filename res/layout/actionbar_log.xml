@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_left_id"
+    android:layout_width="fill_parent"
+    android:layout_height="63.0dp"
+    android:background="@drawable/title_bg" >
+
+    <Button
+        android:id="@+id/btn_back_to_left"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back" />
+
+    <TextView
+        android:id="@+id/tv_left_actionbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="日志"
+        android:textColor="@color/white"
+        android:textSize="28dp" />
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/title_change" />
+
+</RelativeLayout>

